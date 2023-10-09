@@ -1,2 +1,0 @@
-let e={};formEl.addEventListener("input",throttle((function(t){t.preventDefault(),console.log(t),e[t.target.name]=t.target.value,localStorage.setItem("feedback-form-state",JSON.stringify(e))}),500)),formEl.addEventListener("submit",(function(e){e.preventDefault(),localStorage.removeItem("feedback-form-state"),formEl.reset()})),function(){try{const e=JSON.parse(localStorage.getItem("feedback-form-state"))||{};for(const t of formEl.elements)e[t.name]&&(t.value=e[t.name])}catch(e){console.log(e.name),console.log(e.message)}}();
-//# sourceMappingURL=03-feedback.5ad14a27.js.map
